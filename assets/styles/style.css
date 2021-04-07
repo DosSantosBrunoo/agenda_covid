@@ -1,0 +1,45 @@
+body, ul {
+    background-color: #072028 !important;
+}
+
+h1, p, label, a{
+    color: white !important;
+    font-family: 'Rubik', sans-serif;
+    text-decoration:none !important;
+}
+
+
+
+input {
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+.btn {
+margin-top: 10px;
+}
+
+.bg-inicio {    
+    background-size: cover !important;
+    height: 100vh !important;
+    width: 100% !important;
+}
+
+.body {
+    background-color: black !important;
+}
+
+
+button {
+    background-color: #0092A4 !important;
+    border: none;
+    color: white !important;
+}
