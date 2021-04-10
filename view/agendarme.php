@@ -22,7 +22,7 @@ head("Agendarme");
                         <input required type="number" placeholder="Ej: 55134704" class="form-control" name="CI" id="input-CI">
                     </div>
                     <div class="form-group d-flex flex-row justify-content-center">
-                        <button type="submit" class="btn" id="submit-CI">ENVIAR</button>
+                        <button type="submit" class="btn" id="submit-CI">Enviar</button>
                     </div>
                     <?php
                     if (isset($_REQUEST['CI'])) {
