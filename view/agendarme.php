@@ -45,7 +45,7 @@ head("Agendarme");
                                 <input required type="number" placeholder="Numero de telefono" class="form-control" name="phone">
                                 </div>
                                 <div class="form-group d-flex flex-row justify-content-center">
-                                <button type="submit" class="btn" id="submit-CI">ENVIAR</button>
+                                <button type="submit" class="btn" id="submit-CI">Agendarme</button>
                                 </div>
                                 </form>
                                 EOT;
