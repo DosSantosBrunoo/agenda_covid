@@ -34,7 +34,8 @@ head("Consultar por grupo")
                         </div>
                     </div>
                     <div class="form-group d-flex flex-row justify-content-center">
-                        <button type="submit" class="btn">Consultar</button>
+                        <button style="margin-right: 15px; background-color: #0091a470 !important;" type="reset" class="btn">Limpiar</button>
+                        <button type="submit" class="btn">Enviar</button>
                     </div>
                 </form>
                 <?php

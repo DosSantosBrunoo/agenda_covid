@@ -22,7 +22,8 @@ head("Borrar Agenda")
                         <input required min="0" type="number" placeholder="Ej: 55134704" class="form-control" name="CI">
                     </div>
                     <div class="form-group d-flex flex-row justify-content-center">
-                        <button type="submit" class="btn">Borrar</button>
+                        <button style="margin-right: 15px; background-color: #0091a470 !important;" type="reset" class="btn">Limpiar</button>
+                        <button type="submit" class="btn">Enviar</button>
                     </div>
                 </form>
                 <?php
