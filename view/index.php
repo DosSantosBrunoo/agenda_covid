@@ -7,10 +7,6 @@ head("Inicio");
 ?>
 
 <body class="body">
-    <?php
-    include '../db_connection.php';
-    $conn = OpenCon();
-    ?>
     <div class="container-fluid">
         <div class="row align-items-center" style="background: white;">
             <div class="col-4">
@@ -27,9 +23,6 @@ head("Inicio");
             </div>
         </div>
     </div>
-    <?php
-    CloseCon($conn);
-    ?>
 </body>
 
 </html>

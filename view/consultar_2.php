@@ -45,7 +45,7 @@ head("Consultar por grupo")
                     if (mysqli_num_rows($resultPerGroup) > 0) {
                         while ($line = mysqli_fetch_array($resultPerGroup)) {
                             $cantidad = $line["cantidad"];
-                            echo "<p style='text-align: center;'>".$cantidad."</p>";
+                            echo "<p style='text-align: center;'>".$cantidad." Usuario/s en este grupo</p>";
                         }
                     }else {
                         echo "<p style='text-align: center;'>0</p>";
