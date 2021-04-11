@@ -29,13 +29,14 @@ head("Consultar por edad")
                         </div>
                     </div>
                     <div class="form-group d-flex flex-row justify-content-center">
-                        <button type="submit" class="btn">Consultar</button>
+                        <button style="margin-right: 15px; background-color: #0091a470 !important;" type="reset" class="btn">Limpiar</button>
+                        <button type="submit" class="btn">Enviar</button>
                     </div>
                 </form>
                 <?php
                 if (isset($_REQUEST['year'])) {
                     $years = $_REQUEST['year'];
-                    $queryUser = "SELECT * FROM usuario WHERE usuario.activo = 1";
+                    $queryUser = "SELECT * FROM usuario INNER JOIN agenda ON agenda.idUsuario = usuario.idUsuario WHERE usuario.activo = 1";
                     $resultQueryUser = mysqli_query($conn, $queryUser) or die('Consulta fallida: ' . mysqli_error($conn));
                     $dieciocho_treinta = array();
                     $treinta_cincuenta = array();

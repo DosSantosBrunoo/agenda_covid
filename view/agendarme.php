@@ -22,6 +22,7 @@ head("Agendarme");
                         <input required type="number" placeholder="Ej: 55134704" class="form-control" name="CI" id="input-CI">
                     </div>
                     <div class="form-group d-flex flex-row justify-content-center">
+                        <button style="margin-right: 15px; background-color: #0091a470 !important;" type="reset" class="btn clear">Limpiar</button>
                         <button type="submit" class="btn" id="submit-CI">Enviar</button>
                     </div>
                     <?php
@@ -35,18 +36,20 @@ head("Agendarme");
                                 echo "<p style='text-align: center;'>Usuario " . $fullname . "</p>";
                                 echo <<< EOT
                                 <script>
-                                document.querySelector("#input-CI").value = $CI
-                                document.querySelector("#submit-CI").style.display = "none";
+                                    document.querySelector("#input-CI").value = $CI
+                                    document.querySelector("#submit-CI").style.display = "none";
+                                    document.querySelector(".clear").style.display = "none";
                                 </script>
                                 <form action="#" method="get">
-                                <div class="form-group">
-                                <input type="hidden" value="$fullname">
-                                <label class="navbar-brand" for="phone">Ingrese telefono</label>
-                                <input required type="number" placeholder="Numero de telefono" class="form-control" name="phone">
-                                </div>
-                                <div class="form-group d-flex flex-row justify-content-center">
-                                <button type="submit" class="btn" id="submit-CI">Agendarme</button>
-                                </div>
+                                    <div class="form-group">
+                                        <input type="hidden" value="$fullname">
+                                        <label class="navbar-brand" for="phone">Ingrese telefono</label>
+                                        <input required type="number" placeholder="Numero de telefono" class="form-control" name="phone">
+                                    </div>
+                                    <div class="form-group d-flex flex-row justify-content-center">
+                                        <button style="margin-right: 15px; background-color: #0091a470 !important;" type="reset" class="btn">Limpiar</button>
+                                        <button type="submit" class="btn" id="submit-CI">Agendarme</button>
+                                    </div>
                                 </form>
                                 EOT;
                             };
