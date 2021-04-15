@@ -17,9 +17,9 @@ Mira **[Instalación](https://github.com/DosSantosBrunoo/agenda_covid/blob/READM
 
 ### Pre-requisitos 📋
 
-[XAMPP](https://www.apachefriends.org/es/index.html)
-[PHP](https://www.php.net/downloads)
-[VsCode](https://code.visualstudio.com)
+* [XAMPP](https://www.apachefriends.org/es/index.html)
+* [PHP](https://www.php.net/downloads)
+* [VsCode](https://code.visualstudio.com)
 
 ### Instalación 🔧
 
