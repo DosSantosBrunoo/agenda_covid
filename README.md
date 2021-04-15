@@ -12,7 +12,7 @@ Para comenzar es necesario que clonemos este repo en direcctorio root de Apache
 ### MacOS
 `/Applications/XAMP/htdocs`
 
-Mira **[Instalación]()** para conocer como desplegar el proyecto.
+Mira **[Instalación](https://github.com/DosSantosBrunoo/agenda_covid/blob/README/README.md#instalación-)** para conocer como desplegar el proyecto.
 
 
 ### Pre-requisitos 📋
@@ -55,7 +55,7 @@ Entrar a esta [url](http://localhost/agenda_covid/view/index.php) para comenzar!
 
 ## Ejecutando las pruebas ⚙️
 
-Para ejecutar las pruebas debemos ingresar a la web como se explicó al final del punto [Instalación]()
+Para ejecutar las pruebas debemos ingresar a la web como se explicó al final del punto [Instalación](https://github.com/DosSantosBrunoo/agenda_covid/blob/README/README.md#instalación-)
 1. Agendar a alguien en nuestra tabla `agenda`, por ende nos dirigimos a [Agendar](http://localhost/agenda_covid/view/agendarme.php)\
 Ingresar CI válida(Que dicha CI exista en la tabla `usuario`) e ingresarle telefono al usuario.
 2. Borrar a alguien de nuestra tabla `agenda`, por ende nos dirigimos a [Borrar](http://localhost/agenda_covid/view/borrar.php)\
@@ -85,7 +85,7 @@ Selecciona grupo de edad
 ## Autores ✒️
 
 * **Bruno Dos Santos** - *Desarrollador* - [Linkedin](https://www.linkedin.com/in/bruno-dos-santos-650a56193/) - [GITHUB](https://github.com/DosSantosBrunoo)
-* **Ezequiel Padilla** - *Desarrollador* - [linkedin](https://www.linkedin.com/in/ezequiel-padilla-46804a193/) - [GITHUB](https://github.com/Ezequiel-Padilla)
+* **Ezequiel Padilla** - *Desarrollador* - [Linkedin](https://www.linkedin.com/in/ezequiel-padilla-46804a193/) - [GITHUB](https://github.com/Ezequiel-Padilla)
 
 ## Expresiones de Gratitud 🎁
 
