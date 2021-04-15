@@ -12,57 +12,19 @@ Para comenzar es necesario que clonemos este repo en direcctorio root de Apache
 ### MacOS
 `/Applications/XAMP/htdocs`
 
-Mira **[Deployment]()** para conocer como desplegar el proyecto.
+Mira **[Instalación]()** para conocer como desplegar el proyecto.
 
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
-
-```
-Da un ejemplo
-```
+[XAMPP](https://www.apachefriends.org/es/index.html)
+[PHP](https://www.php.net/downloads)
+[VsCode](https://code.visualstudio.com)
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
-
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
+Ejecutar `XAMPP` e iniciar los servicios de `Apache` y `MySQL`\
+Entrar a esta url `http://localhost/phpmyadmin/`\
 Crear una Base de Datos en MySQL llamada “agenda_covid” con las siguientes
 tablas:
 
@@ -89,26 +51,42 @@ También puedes usar este script para que cree todas las tablas y agregue los da
 [agenda_covid.txt](https://github.com/DosSantosBrunoo/agenda_covid/files/6317480/agenda_covid.txt)
 Acuerdese de cambiar la extension del archivo a `sql`
 
+Entrar a esta [url](http://localhost/agenda_covid/view/index.php) para comenzar!
+
+## Ejecutando las pruebas ⚙️
+
+Para ejecutar las pruebas debemos ingresar a la web como se explicó al final del punto [Instalación]()
+1. Agendar a alguien en nuestra tabla `agenda`, por ende nos dirigimos a [Agendar](http://localhost/agenda_covid/view/agendarme.php)\
+Ingresar CI válida(Que dicha CI exista en la tabla `usuario`) e ingresarle telefono al usuario.
+2. Borrar a alguien de nuestra tabla `agenda`, por ende nos dirigimos a [Borrar](http://localhost/agenda_covid/view/borrar.php)\
+Ingresar CI válida(Que dicha CI exista en la tabla `agenda`)
+3. Consultar las dosis de un usuario desde la tabla `agenda`, por ende nos dirigimos a [Consultar](http://localhost/agenda_covid/view/consultar_1.php)\
+Ingresar CI válida(Que dicha CI exista en la tabla `agenda`)
+4. Consultar cantidad de usuarios agendados por grupo desde la tabla `agenda`, por ende nos dirigimos a [Consultar por grupo](http://localhost/agenda_covid/view/consultar_2.php)
+Seleccione grupo de usuarios
+5. Consultar cantidad de usuarios agendados por grupo de edad desde la tabla `agenda`, por ende nos dirigimos a [Consultar por edad](http://localhost/agenda_covid/view/consultar_3.php)\
+Selecciona grupo de edad
+
+### Analice las pruebas end-to-end 🔩
+
+1. Un usuario existente se pueda agendar
+2. La agenda de un usuario se pueda borrar
+3. Se puedan consultar los usuarios agendados
+4. Se pueden consultar los usuarios agendados por grupos
+5. Se pueden consultar los usuarios agendados por grupos de edad
+
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+* [Bootstrap](https://getbootstrap.com) - El framework de estilos web usado
+* [PHP](https://www.php.net) - Lenguaje de programación
+* HTML - Lenguaje de etiquetado
+* CSS - Lenguaje de diseño
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
+* **Bruno Dos Santos** - *Desarrollador* - [Linkedin](https://www.linkedin.com/in/bruno-dos-santos-650a56193/) - [GITHUB](https://github.com/DosSantosBrunoo)
+* **Ezequiel Padilla** - *Desarrollador* - [linkedin](https://www.linkedin.com/in/ezequiel-padilla-46804a193/) - [GITHUB](https://github.com/Ezequiel-Padilla)
 
 ## Expresiones de Gratitud 🎁
 
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
+Desde todo el equipo de la Fundación Agenda Covid queremos decirte "GRACIAS" por tu apoyo!
