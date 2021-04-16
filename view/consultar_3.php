@@ -36,7 +36,7 @@ head("Consultar por edad")
                 <?php
                 if (isset($_REQUEST['year'])) {
                     $years = $_REQUEST['year'];
-                    $queryUser = "SELECT * FROM usuario WHERE usuario.activo = 1";
+                    $queryUser = "SELECT * FROM usuario INNER JOIN agenda ON agenda.idUsuario = usuario.idUsuario WHERE usuario.activo = 1";
                     $resultQueryUser = mysqli_query($conn, $queryUser) or die('Consulta fallida: ' . mysqli_error($conn));
                     $dieciocho_treinta = array();
                     $treinta_cincuenta = array();

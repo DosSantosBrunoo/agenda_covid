@@ -22,7 +22,7 @@ head("Agendarme");
                         <input required type="number" placeholder="Ej: 55134704" class="form-control" name="CI" id="input-CI">
                     </div>
                     <div class="form-group d-flex flex-row justify-content-center">
-                        <button style="margin-right: 15px; background-color: #0091a470 !important;" type="reset" class="btn">Limpiar</button>
+                        <button style="margin-right: 15px; background-color: #0091a470 !important;" type="reset" class="btn clear">Limpiar</button>
                         <button type="submit" class="btn" id="submit-CI">Enviar</button>
                     </div>
                     <?php
@@ -38,6 +38,7 @@ head("Agendarme");
                                 <script>
                                     document.querySelector("#input-CI").value = $CI
                                     document.querySelector("#submit-CI").style.display = "none";
+                                    document.querySelector(".clear").style.display = "none";
                                 </script>
                                 <form action="#" method="get">
                                     <div class="form-group">
