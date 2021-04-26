@@ -49,7 +49,7 @@ head("Consultar por grupo")
                             echo "<p style='text-align: center;'>".$cantidad." Usuario/s en este grupo</p>";
                         }
                     }else {
-                        echo "<p style='text-align: center;'>0</p>";
+                        echo "<p style='text-align: center;'>0 Usuario/s en este grupo</p>";
                     }
                 }
                 ?>

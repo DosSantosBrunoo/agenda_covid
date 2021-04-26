@@ -19,7 +19,7 @@ head("Consultar agenda")
                     <div class="form-group ">
                         <h1 class="d-flex flex-row justify-content-center">Consultar agenda</h1>
                         <label class="navbar-brand" for="CI">Ingrese CI</label>
-                        <input required type="number" placeholder="Ej: 55134704" class="form-control" name="CI">
+                        <input autocomplete="off" required type="number" placeholder="Ej: 55134704" class="form-control" name="CI">
                     </div>
                     <div class="form-group d-flex flex-row justify-content-center">
                         <button style="margin-right: 15px; background-color: #0091a470 !important;" type="reset" class="btn">Limpiar</button>

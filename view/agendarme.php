@@ -19,7 +19,11 @@ head("Agendarme");
                     <h1 class="d-flex flex-row justify-content-center">Agendarme</h1>
                     <div class="form-group ">
                         <label class="navbar-brand" for="">Ingrese CI</label>
-                        <input required type="number" placeholder="Ej: 55134704" class="form-control" name="CI" id="input-CI">
+                        <input autocomplete="off" required type="number" placeholder="Ej: 55134704" class="form-control" name="CI" id="input-CI">
+                    </div>
+                    <div class="form-group ">
+                        <label class="navbar-brand" for="">Ingrese Email</label>
+                        <input required type="email" placeholder="example@example.com" class="form-control" name="mail" id="input-mail">
                     </div>
                     <div class="form-group d-flex flex-row justify-content-center">
                         <button style="margin-right: 15px; background-color: #0091a470 !important;" type="reset" class="btn clear">Limpiar</button>
@@ -33,7 +37,6 @@ head("Agendarme");
                         if (mysqli_num_rows($resultQueryUser) > 0) {
                             while ($line = mysqli_fetch_array($resultQueryUser)) {
                                 $fullname = $line["nombre"] . " " . $line["apellido"];
-                                echo "<p style='text-align: center;'>Usuario " . $fullname . "</p>";
                                 echo <<< EOT
                                 <script>
                                     document.querySelector("#input-CI").value = $CI
@@ -43,8 +46,8 @@ head("Agendarme");
                                 <form action="#" method="get">
                                     <div class="form-group">
                                         <input type="hidden" value="$fullname">
-                                        <label class="navbar-brand" for="phone">Ingrese telefono</label>
-                                        <input required type="number" placeholder="Numero de telefono" class="form-control" name="phone">
+                                        <label class="navbar-brand" for="phone">Ingrese telefono de $fullname</label>
+                                        <input autocomplete="off" required type="number" placeholder="Numero de telefono" class="form-control" name="phone">
                                     </div>
                                     <div class="form-group d-flex flex-row justify-content-center">
                                         <button style="margin-right: 15px; background-color: #0091a470 !important;" type="reset" class="btn">Limpiar</button>
