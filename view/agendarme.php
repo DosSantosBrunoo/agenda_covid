@@ -21,6 +21,10 @@ head("Agendarme");
                         <label class="navbar-brand" for="">Ingrese CI</label>
                         <input required type="number" placeholder="Ej: 55134704" class="form-control" name="CI" id="input-CI">
                     </div>
+                    <div class="form-group ">
+                        <label class="navbar-brand" for="">Ingrese Email</label>
+                        <input required type="email" placeholder="Ej: example@example.com" class="form-control" name="mail" id="input-mail">
+                    </div>
                     <div class="form-group d-flex flex-row justify-content-center">
                         <button style="margin-right: 15px; background-color: #0091a470 !important;" type="reset" class="btn clear">Limpiar</button>
                         <button type="submit" class="btn" id="submit-CI">Enviar</button>
