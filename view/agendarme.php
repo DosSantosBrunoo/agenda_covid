@@ -19,7 +19,7 @@ head("Agendarme");
                     <h1 class="d-flex flex-row justify-content-center">Agendarme</h1>
                     <div class="form-group ">
                         <label class="navbar-brand" for="">Ingrese CI</label>
-                        <input required type="number" placeholder="Ej: 55134704" class="form-control" name="CI" id="input-CI">
+                        <input autocomplete="off" required type="number" placeholder="Ej: 55134704" class="form-control" name="CI" id="input-CI">
                     </div>
                     <div class="form-group ">
                         <label class="navbar-brand" for="">Ingrese Email</label>
@@ -47,7 +47,7 @@ head("Agendarme");
                                     <div class="form-group">
                                         <input type="hidden" value="$fullname">
                                         <label class="navbar-brand" for="phone">Ingrese telefono de $fullname</label>
-                                        <input required type="number" placeholder="Numero de telefono" class="form-control" name="phone">
+                                        <input autocomplete="off" required type="number" placeholder="Numero de telefono" class="form-control" name="phone">
                                     </div>
                                     <div class="form-group d-flex flex-row justify-content-center">
                                         <button style="margin-right: 15px; background-color: #0091a470 !important;" type="reset" class="btn">Limpiar</button>
